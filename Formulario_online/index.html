@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>IBGroup</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    </head>
+
+
+    <body>
+
+		<div class="container">
+        <div class="row">
+            <div class="col">
+                          <h1 style="color:blue;"><center>DESARROLLA UNA RED DE CONTACTOS PODEROSA</center></h1>
+            <hr>
+            </div>
+        </div>
+      </div>
+    <br>
+
+
+      <div class="container">
+        <div class="row">
+                <p><b>Señores</b><br>
+       IB GROUP SAC<br>
+       Calle San Martin 814, Miraflores, Lima 18<br>
+       Tel.: (+01)4789810<br>
+       Cel: 983 481 303<br>
+      Correo Electrónico: <a href="" target="_blank">cm.outplacement.coaching@corporacionibgroup.pe</a><br>
+      <b>Presente.-</b><br>
+      Le agradeceremos se sirvan inscribir a las siguientes personas de mi empresa:<br>
+      <div class="container">
+      	<div class="row">
+      <form>		
+					<b><label class="participantes" >Numero de Participantes : </label></b>
+					<input id="participantesInput" name="num_particpantes" type="text">
+					<button type="button" class="btn btn-light">Agregar</button>
+    				</form>
+				</div>
+      </div>
+        </div>
+      </div>
+
+		<div class="container">
+			<div class="row">
+		<form action="enviar.php" method="POST"  target='_self' enctype="multipart/form-data">
+			 <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4"><b>Nombres<strong><span style="color:red;">(*)</span></strong></b></label>
+      <input type="text" class="form-control" id="inputEmail4" name = "nombre">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4"><b>Cargo<strong><span style="color:red;">(*)</span></strong></b></label>
+      <input type="text" class="form-control" id="inputPassword4" name="cargo">
+    </div>
+
+    <div class="form-group col-md-6">
+      <label for="inputEmail4"><b>Celular<strong><span style="color:red;">(*)</span></strong></b></label>
+      <input type="text" class="form-control" id="inputEmail4" name = "celular">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4"><b>Email<strong><span style="color:red;">(*)</span></strong></b></label>
+      <input type="email" class="form-control" id="inputPassword4" name="correo">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4"><b>DNI<strong><span style="color:red;">(*)</span></strong></b></label>
+      <input type="text" class="form-control" id="inputPassword4" name ="dni">
+    </div>
+  </div>
+<br>
+
+
+
+		<div>
+		    <hr>
+			<p>El pago correspondiente se efectuará:</p>
+			<div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1"><b>En la oficina de IB Corp Sac con RUC 20601399882  (Corporación Ibgroup)(Calle San Martin 814, Miraflores, Lima 18)</b></label>
+            </div>
+            <div class="form-check">
+            <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="..."> <b>Mediante el depósito en el Banco</b>
+            </div>
+            <div class="form-check form-check-inline" style="padding-left:30px;">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2"> <b>Banco de BVA  Cta Cte en Soles: 0011-0157-59-0100045456</b></label>
+            </div><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nro. Cod. InterBancario: 011 157 000100045456 59.<br>
+            <!--
+            <div class="form-check form-check-inline" style="padding-left:30px;">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+            <label class="form-check-label" for="inlineRadio3"> <b>Banco de Crédito del Perú Cta Cte Dólares Nº 111–2222222–3-44</b></label>
+            </div>-->
+<div class="col-md-6">
+                        <label><b> Añadir Voucher</b></label><br>
+					    <input type="file" name="archivo">
+					</div>
+			
+
+			 	<p> Adjuntamos la información necesaria para la emisión de la factura</p>
+
+			<div class="form-group">
+				<div class="form-row">
+					<div class="col-md-6">
+						<label><strong>Empresa<span style="color:red;">(*)</span></strong>:</label>
+						<input class="form-control" type="text" name="empresa" />
+					</div><br>	
+
+					<div class="col md-6">
+						<label><strong>RUC<span style="color:red;">(*)</span></strong>:</label>
+						<input class="form-control" type="text" name="ruc" />
+					</div><br>					
+						
+					<div class="col-md-6">
+						<label><strong>Direccion<span style="color:red;">(*)</span></strong>:</label>
+						<input class="form-control" type="text" name="direccion" />
+					</div><br>				
+						
+					<div class="col-md-6">
+						<label><strong>Distrito:<span style="color:red;">(*)</span></strong></label>
+						<input class="form-control" type="text" name="distrito" />
+					</div><br>				
+				
+					<div class="col-md-6">
+						<label><strong>Telefono<span style="color:red;">(*)</span></strong>:</label>
+						<input class="form-control" type="text" name="telefono"/>
+					</div><br>
+					
+					<div class="col-md-6">
+						<label><b>Fax:</b></label>
+						<input  class="form-control" type="text" name="fax" />
+					</div><br>
+					
+					<div class="col-md-6">
+						<label><b>Email:</b></label>
+						<input  class="form-control" type="email" name="email" />
+					</div>	
+				</div>	
+			<br>
+			<br>
+				<center><button type="submit"  class="btn btn-info">ENVIAR</button></center>	
+		</form>
+
+		</div>	
+		</div><br>
+		</div>
+		</div>
+    </body>
+    <foot></foot>
+</html>

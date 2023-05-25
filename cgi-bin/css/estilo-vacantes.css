@@ -1,0 +1,196 @@
+/*Estilos para el Area de Vacantes*/
+
+.margintopv
+{
+	margin-top: 15px;
+}
+
+
+/*tamaño del icon*/
+
+.glyphicon.icon-map-marker {
+    font-size: 25px;
+}
+
+
+.textogris
+
+{
+color: #787878;
+font-size: 14px;
+
+}
+
+.cabeceras
+{
+	font-size: 16px;
+}
+
+.minimargin
+{
+	margin-top: 10px;
+}
+
+
+
+
+ 
+
+
+.table tbody tr:hover td, .table tbody tr:hover th {
+    background-color: #eeeeea;
+
+
+
+}
+
+.marginsides
+{
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.textheadertable
+{
+color: #787878;
+font-size: 16px;
+}
+
+.colorheadtr
+{
+background-color:  rgba(241, 128, 44, 0.4);
+
+}
+
+.colorheadtr-ingenieria
+
+{
+
+	background-color:  rgba(0, 104, 181, 0.2);
+
+}
+
+.margintops
+{
+
+	margin-top: 20px;
+}
+
+
+.modal-body .form-horizontal .col-sm-2,
+.modal-body .form-horizontal .col-sm-10 {
+    width: 100%
+}
+
+.modal-body .form-horizontal .control-label {
+    text-align: left;
+}
+.modal-body .form-horizontal .col-sm-offset-2 {
+    margin-left: 15px;
+}
+
+.color-recolocado
+{
+
+color: #2E64FE;
+font-size: 16px;
+}
+
+
+.colorheadtr-finanzas
+
+{
+
+	background-color:  rgba(44, 155, 44, 0.5);
+
+}
+
+
+.marginsides2
+{
+	margin-right: 30px;
+	margin-left: 30px;
+}
+
+/* FORMULARIO BUSCAR*/
+
+
+.marginx
+{
+margin-right: 40px;
+margin-left: 40px;
+
+}
+
+.tocenter {
+    margin:0 auto;
+    display: inline;
+    }
+
+
+
+    .marginarriba
+    {
+    	margin-top: 5px;
+    }
+
+
+
+
+    .textosub
+
+{
+color: #787878;
+font-size: 14px;
+margin-right: 10px;
+margin-left: 10px;
+padding-right: 20px;
+padding-left: 20px;
+
+}
+
+.textosublite
+{
+
+  color: #787878;
+font-size: 12px;
+margin-right: 10px;
+margin-left: 10px;
+padding-right: 20px;
+padding-left: 20px;
+font-weight:bold;
+
+}
+
+
+
+
+/*icono*/
+
+.left-inner-addon {
+  position: relative;
+}
+
+.left-inner-addon input {
+  padding-left: 30px;
+}
+
+.left-inner-addon i {
+  position: absolute;
+  padding: 10px 12px;
+}
+
+.right-inner-addon {
+  position: relative;
+}
+
+.right-inner-addon input {
+  padding-right: 30px;
+}
+
+.right-inner-addon i {
+  position: absolute;
+  right: 0px;
+  padding: 10px 12px;
+}
+

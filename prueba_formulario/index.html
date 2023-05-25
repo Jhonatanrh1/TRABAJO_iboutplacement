@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FORMULARIO </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css " />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form action="enviar.php" method="POST">
+        <h1>JORNADAS LABORALES</h1>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="nombre">Nombre</label>
+                <input type="text"  class="form-control" id="nombre" placeholder="Ingrese su nombre" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" class="form-control" id="apellidos" placeholder="Ingrese sus apellidos" required>
+            </div>
+        </div>
+        <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="telefono">Telefono</label>
+                    <input type="text" class="form-control" id="telefono" placeholder="Ingrese su telefono">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="Email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+                </div>
+            </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="fecha">Fecha</label>
+                <input type="date" class="form-control" id="fecha" >
+            </div>
+            <div class="form-group col-md-6">
+                <label for="turno">Turno</label>
+                <select id="turno" class="form-control">  
+                    <option selected="true" disabled="disabled">Seleccione su turno</option>              
+                    <option >Mañana (9:00am a 11:00am)</option>
+                    <option>Tarde (4:00pm a 6:00pm)</option>
+                </select>
+            </div>
+        </div> 
+        <div class="form-group">
+            <label for="comnetario">Comentario</label>
+            <textarea class="form-control" id="comentario" row ="5"></textarea>
+        </div>
+        <center><input type="submit" class="btn btn-success" value="Enviar" ></center>
+        
+    </form>
+</body>
+</html>

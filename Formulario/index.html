@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FORMULARIO </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css " />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-24">
+                <h1>JORNADAS LABORALES</h1>       
+                <form id="formulario" roles="form" action="index2.php" method="POST">
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="nombre">Nombre</label>
+                            <input id="nombre" type="text" name="nombre" class="form-control"  placeholder="Ingrese su nombre" required>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="apellidos">Apellidos</label>
+                            <input id="apellidos" type="text" name="apellidos" class="form-control"  placeholder="Ingrese sus apellidos" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="telefono">Telefono</label>
+                            <input id="telefono" type="text" name="telefono" class="form-control" placeholder="Ingrese su telefono" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="email">Email</label>
+                            <input id="email" type="Email" name="email" class="form-control" placeholder="nombre@ejemplo.com" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="fecha">Fecha</label>
+                            <input id="fecha" type="date" name="fecha" class="form-control" required>
+                        </div>
+                         <div class="form-group col-md-6">
+                             <label for="turno">Turno</label>
+                             <select id="turno" class="form-control" required name="turno">  
+                                 <option selected="true" disabled="disabled">Seleccione su turno</option>
+                                 <option >Mañana (9:00am a 11:00am)</option>
+                                 <option>Tarde (4:00pm a 6:00pm)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="comentario">Comentario</label>
+                            <textarea id="comentario" name="mensaje" class="form-control"  row ="6" required></textarea>
+                        </div>
+                        <center><button class="btn" type="submit" name="action">Enviar
+                        <!--<i class="material-icons right">send</i>--> 
+                        </button></center>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/conecta.js"></script>
+                
+    </body>
+    </html>

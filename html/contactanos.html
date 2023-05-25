@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contactenos</title>
+    <link rel="shortcut icon" href="../views/images/IB.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../views/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <link rel="stylesheet" href="../views/css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+</head>
+<body>
+    
+<!-- INICIO DE CONTACTO PERSONA -->
+<nav>
+    <div class="sticky-top container-fluid p-0 m-0">
+        <nav class="navegaciones">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="inicio" class="enlace">
+                <img src="views/images/logo_empresa.png" alt="" class="logo">
+            </a>
+            <ul>
+                <li><a class="active" href="inicio">INICIO</a>
+                <li><a href="inicio#servicios">SERVICIOS</a></li>
+                <li><a href="PreguntasFrecuentes">PREGUNTAS</a></li>
+                <li><a href="https://outplacementt.blogspot.com/">BLOG</a></li>
+                <li><a class="contact" href="inicio#Contactos">CONTÁCTANOS </a></li>
+                <li><a href="estadisticas">ESTADÍSTICAS</a></li>
+                <li><a href="https://ibjobcoach.com/" id="IBJOBCOACH">IBJOBCOACH</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+</nav>
+
+<section id="Contactos" class="ancla">
+    <div class="my-5" id="fase1">
+        <!-- INICIO DE CONTACTO PERSONA -->
+        <div class="container animate__animated animate__fadeInUpBig" id="div_contactoPersona">
+            <div class="card shadow-lg p-3 mb-5 bg-white rounded caja__contacto">
+                <form action="controller/MailPersona.php" class="ajaxpersona" method="POST">
+                    <h2 class="text-center title-follow p-4 title__contactos">CONTACTO PERSONAS</h2>
+                    <div class="row">
+                        <div class="col-lg-6 ">
+                            <div class="form-group p-1 ">
+                                <input type="text" class="form-control" id="nombrespersona" name="nombrespersona" placeholder="NOMBRES" required>
+                            </div>
+                            <div class="form-group p-1">
+                                <input type="text" class="form-control" id="apellidospersona" name="apellidospersona" placeholder="APELLIDOS" required>
+                            </div>
+                            <div class="form-group p-1 ">
+                                <select class="form-control" id="cargopersona" name="cargopersona" required>
+                                    <option selected disabled value="">CARGO</option>
+                                    <option>Propietario</option>
+                                    <option>Director</option>
+                                    <option>Gerente</option>
+                                    <option>Sub gerente</option>
+                                    <option>Jefe</option>
+                                    <option>Profesional</option>
+                                    <option>Técnico</option>
+                                    <option>Consultor</option>
+                                    <option>Estudiante</option>
+                                </select>
+                            </div>
+                            <div class="form-group p-1">
+                                <input type="email" class="form-control" id="emailpersona" name="emailpersona" placeholder="EMAIL" required>
+                            </div>
+                            <div class="form-group p-1">
+                                <input type="text" class="form-control" id="paispersona" name="paispersona" placeholder="PAÍS" required>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group p-1">
+                                <input type="text" class="form-control" id="ciudadpersona" name="ciudadpersona" placeholder="CIUDAD" required>
+                            </div>
+                            <div class="form-group p-1">
+                                <input type="tel" class="form-control" id="telefonopersona" name="telefonopersona" placeholder="TELÉFONO" required>
+                            </div>
+                            <div class="form-group p-1">
+                                <select class="form-control" id="trabajo_actual_persona" name="trabajo_actual_persona" required>
+                                    <option selected disabled value="">¿ACTUALMENTE ESTAS TRABAJANDO?</option>
+                                    <option>Si</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+                            <div class="form-group  p-1">
+                                <select class="form-control" id="servicio_requerido" name="servicio_requerido" required>
+                                    <option selected disabled value="">¿QUÉ SERVICIOS REQUIERES?</option>
+                                    <option>Outplacement para personas naturales - Entrenamiento Completo</option>
+                                    <option>Talleres de Desarrollo de Habilidades Blandas</option>
+                                    <option>Curriculum de Gran Impacto</option>
+                                    <option>Mejora tu Autoconocimiento en el Campo Laboral</option>
+                                    <option>Entrenamiento para tu Entrevista Laboral Exitosa</option>
+                                    <option>Carta de Presentación</option>
+                                    <option>Linkedin - Optimización</option>
+                                    <option>Coaching para Desarrollo de Habilidades Blandas</option>
+                                    <option>Coaching Ejecutivo</option>
+                                    <option>Otro tipo de Coaching</option>
+                                </select>
+                            </div>
+    
+                            <div class="form-group p-1">
+                                <select class="form-control" id="salarioPersona" name="salarioPersona" aria-invalid="false" required>
+                                    <option selected disabled value="">¿CUÁL ES TU RANGO SALARIAL?</option>
+                                    <option>De $. 0 - $. 1 000></option>
+                                    <option>De $. 1 000 - $. 2 000</option>
+                                    <option>De $. 2 000 - $. 3 000</option>
+                                    <option>De $. 3 000 - $. 5 000</option>
+                                    <option>De $. 5 000 - $. 8 000</option>
+                                    <option>Más de $. 8 000</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="form-group p-1">
+                        <textarea type="text" class="form-control" rows="5" id="mensajePersona" name="mensajePersona" minlength="10" placeholder="ESCRIBA SU CONSULTA" required></textarea>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" id="Contactopersona" class="btn btn-primary">
+                            <span class="spinner-border spinner-border-sm" id="spinnerPersona" role="status" aria-hidden="true" style="width: 1.4rem;height: 1.4rem;margin-right: 8px;display: none;">
+                            </span>
+                            Enviar Consulta
+                        </button>
+                    </div>
+                    <div class="text-center p-3">
+                        <h6 style="color:black;">Al Hacer clic en enviar, Usted manifiesta su consentimiento para que
+                            Corporación IBGROUP realice el tratamiento de sus datos personales,conforme
+                            <a href="https://iboutplacement.com/Terminos_y_condiciones.pdf" target="blank" style="color:#c20f0f;">
+                                Condiciones y Términos detallados en la sección Política de Tratamiento de Datos
+                                Personales.</a>
+                        </h6>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+    
+        <!--Fin Contacto Persona-->
+    
+</section>
+<section class="footer">
+    <div class="social">
+        <h2>Síguenos</h2>
+        <a href="https://www.facebook.com/IBOutplacementOficial/"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://twitter.com/ib_outplacement"><i class="fab fa-twitter-square "></i></a>
+        <a href="https://www.youtube.com/channel/UC9NkcDwe6-P37cHXkn1XBcA/"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/iboutplacement/"><i class="fab fa-instagram-square"></i></a>
+        <a href="https://www.linkedin.com/company/iboutplacement"><i class="fab fa-linkedin "></i></a>
+    </div>
+</section>
+<footer class="text-center text-lg-start wow animate__animated animate__fadeInUp " data-wow-duration="2s">
+   <!-- Copyright -->
+   <div class="text-center p-4 text-white" style="background-color: rgba(0, 0, 0, 0.2); color:black;">
+       <a class="text-footer"> © 2020 Copryright IB Corp. </a>|
+       <a class="text-footer"> Políticas de Privacidad </a>|
+       <a class="text-footer" href="https://iboutplacement.com/Terminos_y_condiciones.pdf" target="blank"> Términos y
+           condiciones
+       </a>|
+       <a class="text-footer" href="https://corpibgroup.com/"> Otros Servicios </a><br>
+       <!--  Designed by
+       <a class="text-footer" href="http://www.atis.al">ATIS</a>-->
+   </div>
+   <!-- Copyright -->
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+<script src="views/js/jquery-3.5.1.min.js"></script>
+<script src="views/js/ajax.js"></script>
+<script src="views/js/efectos.js"></script>
+<script src="views/js/bootstrap.bundle.js"></script>
+<script src="views/js/bootstrap.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha512-5WvZa4N7Jq3TVNCp4rjcBMlc6pT3lZ7gVxjtI6IkKW+uItSa+rFgtFljvZnCxQGj8SUX5DHraKE6Mn/4smK1Cg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="views/js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+</body>
+<script>
+ /*   $(document).ready(function() {
+        setTimeout(function() {
+            $('#myModal').modal('show')
+        }, 2000);
+    });*/
+</script>
+</body>
+</html>

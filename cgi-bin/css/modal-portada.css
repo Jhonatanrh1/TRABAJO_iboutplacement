@@ -1,0 +1,74 @@
+
+.modal
+{
+width:100%;
+height: 100vh;
+background: rgba(0,0,0,0.5);
+
+position:fixed;
+top:0;
+left:0;
+
+display:flex;
+
+animation: modal 2s 2s;
+
+animation-fill-mode:forwards;
+
+visibility:hidden;
+opacity:0;
+}
+
+
+.contenido{
+margin:auto;
+width:60%;
+height:60%;
+background: white;
+border-radius:10px;
+}
+
+#cerrar
+{
+display:none;
+}
+
+#cerrar + label {
+position: fixed;
+color:#fff;
+font-size:25px;
+z-index:2050;
+background: #FF0000;
+height: 40px;
+width:40px;
+line-height:40px;
+border-radius:40%;
+right:10px;
+
+
+animation: modal 2s 2s;
+
+animation-fill-mode:forwards;
+
+visibility:hidden;
+opacity:0;
+}
+
+
+
+
+#cerrar:checked + label, #cerrar:checked ~ .modal
+{
+display:none
+}
+
+
+
+
+@keyframes modal {
+100% {
+visibility:visible;
+opacity:1;
+}
+
+}
